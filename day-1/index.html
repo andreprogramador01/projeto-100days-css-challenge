@@ -1,0 +1,111 @@
+<div class="frame">
+    <div class="center">
+          <div class="numbers">
+              <h1 class="um-um"></h1>
+              <h1 class="um-dois"></h1>
+              <h1 class="zero-um"></h1>
+              <h1 class="zero-dois"></h1>	
+          </div>
+          
+          <h2>DAYS</h2>
+          <h3>CSS CHALLENGE</h3>
+    </div>
+  </div>
+  <style>
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+h1,h2,h3{
+	color:white;
+}
+h2{
+	position:relative;
+	top:-20px;
+	font-size:80px;
+	margin:0;
+	text-align:center;
+}
+h3{
+	position:relative;
+	top:-20px;
+	margin:0;
+	text-align:center;
+	font-size:23px;
+	
+}
+.numbers{
+	display:flex;
+	position:relative;
+}
+.um-um{
+	position:relative;
+	top:-3px;
+	left:5px;
+	height:50px;
+	width:20px;
+	background-color:white;
+	border-radius:5px;
+	transform:rotate(50deg);
+	box-shadow:1px 1px 10px grey;
+}
+.um-dois{
+	position:relative;
+	z-index:3;
+	top:0px;
+	height:100px;
+	width:25px;
+	background-color:white;
+	border-radius:5px;
+	box-shadow:1px 1px 10px grey;
+}
+.zero-um{
+	position:relative;
+	left:-5px;
+	z-index:2;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	border:25px solid white;
+	box-shadow: 1px 1px 10px grey;
+}
+.zero-dois{
+	position:relative;
+	left: -20px;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	border:25px solid white;
+	box-shadow: 1px 1px 10px grey;
+}
+.frame{
+	  background: linear-gradient(45deg,  purple, aqua);
+}
+
+
+  </style>
